@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="edit.css">
+    <title>Recipe App</title>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <h1>Recipe App</h1>
+        </header>
+
+        <div class="wrapper">
+            <section>
+                <div>
+                    <input class="title-input" type="text" placeholder="space for title" id="title">
+                </div>
+                <div>
+                    <textarea class="area-text" placeholder="write your instructions" cols="38" rows="9" id="instructions"></textarea>
+                </div>
+            </section>
+
+            <section>
+                <div class="ingredients">
+                    <h2>Ingredients</h2>
+                    <div id="addedIngredients"></div>
+                </div>
+            </section>
+
+            <section>
+                <form class="form-submit" action="submit" id="submit">
+                    <input type="text" name="text" placeholder="add ingredient">
+                    <button>add ingredient</button>
+                </form>
+            </section>
+
+            <section>
+                <h4 class="delete-home">Delete / Home:</h4>
+                <button class="button" id="deleteButton">Delete recipe</button>
+                <button class="button" id="backHomeButton">Back to home</button>
+            </section>
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+    <script src="edit.js"></script>
+</body>
+
+</html>
